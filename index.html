@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mensagem Importante</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #FFD700; /* Amarelo vibrante */
+      color: #008000; /* Verde fluorescente */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      font-size: calc(5vw + 2rem); /* Tamanho dinâmico baseado na tela */
+      line-height: 1.2;
+    }
+
+    .mensagem {
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      animation: pulse 3s infinite; /* Efeito opcional */
+    }
+
+    /* Efeito de pulso (aumenta/diminui a fonte suavemente) */
+    @keyframes pulse {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="mensagem">
+    <p>FORA</p>
+    <p>LULA</p>
+  </div>
+</body>
+</html>
